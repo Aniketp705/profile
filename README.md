@@ -43,4 +43,4 @@ Check out the code for the projects featured in this portfolio:
 - **[Classification Project](https://github.com/Aniketp705/Classification_Project.git)**
 
 ---
-*Built with ❤️ by [Aniket Pawar](https://linkedin.com/in/aniketpawar705)*
+*Built by [Aniket Pawar](https://linkedin.com/in/aniketpawar705)*
