@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio repository. This website showcases my projects in Deep Learning, NLP, and Computer Vision.
 
-### [� **View Live Website**](https://aniketp705.github.io/profile/)
+### [**View Live Website**](https://aniketp705.github.io/profile/)
 
 ## 🛠️ Built With
 - **Frontend**: HTML5, Vanilla CSS3, JavaScript
