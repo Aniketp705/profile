@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Pawar | AI & Deep Learning Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for FontAwesome, might need a real kit or CDN if this one fails generally used publicly available CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">AP</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-img-container">
+                <img src="profile.jpg" alt="Aniket Pawar" class="profile-img">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Aniket Pawar</span></h1>
+            <h2 class="typing-text">I build <span id="text-slider"></span></h2>
+            <p>Final-year B.Tech Student | Deep Learning | NLP | Computer Vision</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/aniketpawar705" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Aniketp705" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:aniket22217pawar@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="Resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+    </header>
+
+    <section id="about" class="section hidden">
+        <h2 class="section-title">About Me</h2>
+        <div class="container">
+            <p>
+                I am a final-year B.Tech student at Deogiri Institute of Engineering and Management Studies,
+                specializing in Computer Science and Engineering.
+                I have a strong passion for <strong>Deep Learning, NLP, and Computer Vision</strong>.
+                My experience involves building end-to-end AI pipelines, from training Neural Networks using Transfer
+                Learning to deploying real-time applications via Streamlit.
+                I am constantly seeking to leverage my skills in Generative AI and image processing to solve real-world
+                problems.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section hidden">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="container skills-container">
+            <div class="skill-category hidden">
+                <h3>Languages & Databases</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>SQL (MySQL, SQLite)</span>
+                </div>
+            </div>
+            <div class="skill-category hidden">
+                <h3>AI/ML & Deep Learning</h3>
+                <div class="skill-tags">
+                    <span>TensorFlow</span>
+                    <span>Keras</span>
+                    <span>MobileNetV2</span>
+                    <span>Transfer Learning</span>
+                    <span>Scikit-learn</span>
+                    <span>NumPy</span>
+                    <span>CNNs</span>
+                    <span>Random Forest</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web & Tools</h3>
+                <div class="skill-tags">
+                    <span>Flask</span>
+                    <span>Streamlit</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Linux</span>
+                    <span>VSCode</span>
+                    <span>Google Colab</span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section hidden">
+        <h2 class="section-title">Projects</h2>
+        <div class="container projects-grid">
+            <div class="project-card hidden">
+                <h3>AI Career Coach</h3>
+                <p class="tech-stack">Python, Flask, Gemini Pro, Streamlit</p>
+                <ul>
+                    <li>Developed a Generative AI application using Google’s Gemini Pro API for advanced NLP tasks on
+                        resume data.</li>
+                    <li>Built a Flask backend for PDF parsing and prompt engineering.</li>
+                    <li>Integrated "Job-Specific Tailoring" and "Roadmap Generation" features.</li>
+                </ul>
+                <a href="https://github.com/Aniketp705/resume-analyzer.git" target="_blank" class="project-link"><i
+                        class="fab fa-github"></i> View Code</a>
+            </div>
+            <div class="project-card hidden">
+                <h3>Real-Time Pothole Detection</h3>
+                <p class="tech-stack">Python, TensorFlow, MobileNetV2</p>
+                <ul>
+                    <li>Engineered a lightweight Computer Vision model using Transfer Learning with MobileNetV2.</li>
+                    <li>Implemented data augmentation to prevent overfitting.</li>
+                    <li>Achieved 93.57% Test Accuracy and deployed via Streamlit.</li>
+                </ul>
+                <a href="https://github.com/Aniketp705/pothole-detector.git" target="_blank" class="project-link"><i
+                        class="fab fa-github"></i> View Code</a>
+            </div>
+            <div class="project-card hidden">
+                <h3>Phishing Website Detection</h3>
+                <p class="tech-stack">Python, Scikit-learn, Pandas</p>
+                <ul>
+                    <li>Built a logistic regression classifier to identify malicious websites.</li>
+                    <li>Engineered features based on URL syntax and domain properties.</li>
+                    <li>Achieved an F1-score of 90.5% on a balanced test set.</li>
+                </ul>
+                <a href="https://github.com/Aniketp705/Classification_Project.git" target="_blank"
+                    class="project-link"><i class="fab fa-github"></i> View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section hidden">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="container">
+            <div class="education-item hidden">
+                <h3>Bachelor of Technology in CSE</h3>
+                <p>Deogiri Institute of Engineering and Management Studies | 2022 – 2026</p>
+                <p>Relevant Coursework: Machine Learning, Deep Learning, Data Structures & Algorithms, DBMS</p>
+            </div>
+            <div class="certifications hidden">
+                <h4>Certificates</h4>
+                <ul>
+                    <li>Supervised Machine Learning: Regression and Classification – Stanford University</li>
+                    <li>Programming for Everybody (Getting Started with Python) – University of Michigan</li>
+                </ul>
+            </div>
+            <div class="awards">
+                <h4>Awards</h4>
+                <ul>
+                    <li>Passed the Dr. Homi Bhabha Balvaidnyanik Competition.</li>
+                    <li>Indigo Squad Member at Mood Indigo, IIT Bombay (2023).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section hidden">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="container contact-container">
+            <p>I am currently open to Software Engineer Intern roles. Feel free to reach out!</p>
+            <a href="mailto:aniket22217pawar@gmail.com" class="btn contact-btn">Say Hello</a>
+            <div class="social-links big-socials">
+                <a href="https://linkedin.com/in/aniketpawar705" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Aniketp705" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>+91 9405107842</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aniket Pawar. Built with code & coffee.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
