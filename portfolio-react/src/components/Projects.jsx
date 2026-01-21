@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FaGithub } from 'react-icons/fa';
 import aiCareerCoachImg from '../assets/images/ai_career_coach.png';
 import potholeImg from '../assets/images/pothole_detection.png';
 import fraudImg from '../assets/images/fraud_detection.png';
@@ -53,6 +54,15 @@ const Projects = () => {
         }
     ];
 
+    const handleMouseMove = (e) => {
+        const { currentTarget, clientX, clientY } = e;
+        const { left, top } = currentTarget.getBoundingClientRect();
+        const x = clientX - left;
+        const y = clientY - top;
+        currentTarget.style.setProperty('--mouse-x', `${x}px`);
+        currentTarget.style.setProperty('--mouse-y', `${y}px`);
+    };
+
     return (
         <section className="section" id="projects">
             <div className="container">
@@ -67,7 +77,10 @@ const Projects = () => {
                             viewport={{ once: true }}
                         >
                             <TiltCard>
-                                <div className="project-card">
+                                <div
+                                    className="project-card"
+                                    onMouseMove={handleMouseMove}
+                                >
                                     <div className="project-img-wrapper">
                                         <img src={project.image} alt={project.title} />
                                     </div>
@@ -79,7 +92,10 @@ const Projects = () => {
                                                 <li key={i}>{item}</li>
                                             ))}
                                         </ul>
-                                        <a href={project.link} className="project-link">View Project <span className="arrow">→</span></a>
+                                        <a href={project.link} className="project-link">
+                                            <FaGithub style={{ marginRight: '8px', verticalAlign: 'middle' }} />
+                                            View Project <span className="arrow">→</span>
+                                        </a>
                                     </div>
                                 </div>
                             </TiltCard>

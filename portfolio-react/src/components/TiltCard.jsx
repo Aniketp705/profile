@@ -20,8 +20,8 @@ const TiltCard = ({ children, className }) => {
         y.set(0);
     }
 
-    const rotateX = useTransform(mouseY, [-200, 200], [10, -10]); // Reverse direction for natural tilt
-    const rotateY = useTransform(mouseX, [-200, 200], [-10, 10]);
+    const rotateX = useTransform(mouseY, [-200, 200], [5, -5]); // Reduced tilt
+    const rotateY = useTransform(mouseX, [-200, 200], [-5, 5]);
 
     return (
         <motion.div

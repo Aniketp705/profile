@@ -35,6 +35,15 @@ const Skills = () => {
         visible: { opacity: 1, y: 0 }
     };
 
+    const handleMouseMove = (e) => {
+        const { currentTarget, clientX, clientY } = e;
+        const { left, top } = currentTarget.getBoundingClientRect();
+        const x = clientX - left;
+        const y = clientY - top;
+        currentTarget.style.setProperty('--mouse-x', `${x}px`);
+        currentTarget.style.setProperty('--mouse-y', `${y}px`);
+    };
+
     return (
         <section className="section" id="skills">
             <div className="container">
@@ -58,7 +67,13 @@ const Skills = () => {
                                 viewport={{ once: true }}
                             >
                                 {skillGroup.items.map((item, i) => (
-                                    <motion.span key={i} variants={itemVariants}>{item}</motion.span>
+                                    <motion.span
+                                        key={i}
+                                        variants={itemVariants}
+                                        onMouseMove={handleMouseMove}
+                                    >
+                                        {item}
+                                    </motion.span>
                                 ))}
                             </motion.div>
                         </motion.div>

@@ -287,6 +287,46 @@ body {
   overflow: hidden;
 }
 
+/* Glow Effect */
+.project-card,
+.education-item,
+.skill-tags span {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before,
+.education-item::before,
+.skill-tags span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(56, 189, 248, 0.15),
+      transparent 40%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.project-card:hover::before,
+.education-item:hover::before,
+.skill-tags span:hover::before {
+  opacity: 1;
+}
+
+.project-card>*,
+.education-item>*,
+.skill-tags span>* {
+  position: relative;
+  z-index: 1;
+}
+
 .project-card:hover {
   /* transform: translateY(-5px); Handled by Framer Motion */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
